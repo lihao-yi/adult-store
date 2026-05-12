@@ -1,31 +1,13 @@
 [
   {
-    "id": 1,
     "name": "玫瑰遐想 · 震动伴侣",
     "mainCategory": "氛围情调",
-    "subCategory": "震动玩具",
-    "images": ["images/product-01-1.jpg", "images/product-01-2.jpg"],
-    "description": "流线机身，静音防水，10种变频模式。",
-    "price": 299,
-    "originalPrice": 399
-  },
-  {
-    "id": 2,
-    "name": "暗夜精灵 · 吮吸器",
-    "mainCategory": "氛围情调",
-    "subCategory": "吮吸玩具",
-    "images": ["images/product-02-1.jpg", "images/product-02-2.jpg"],
-    "description": "脉冲吮吸，多档力度。",
-    "price": 259
-  },
-  {
-    "id": 3,
-    "name": "丝绒梦境 · 蕾丝内衣",
-    "mainCategory": "性感内衣",
-    "subCategory": "连体衣",
-    "images": ["images/product-04-1.jpg", "images/product-04-2.jpg"],
-    "description": "蕾丝拼接，柔滑亲肤。",
-    "price": 199,
-    "originalPrice": 269
+    "subCategory": "玩具",
+    "images": [
+      "\\images\\G1.png"
+    ],
+    "description": "流线机身，静音防水..",
+    "price": 10,
+    "originalPrice": 33
   }
 ]
