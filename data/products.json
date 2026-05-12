@@ -4,7 +4,7 @@
     "mainCategory": "氛围情调",
     "subCategory": "玩具",
     "images": [
-      "\images\G1.jpg"
+      "\\images\\G1.jpg"
     ],
     "description": "流线机身，静音防水..",
     "price": 10,
