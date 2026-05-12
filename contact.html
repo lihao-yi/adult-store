@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="联系专属私享顾问 - 臻选私享馆">
+    <title>联系顾问 · 臻选私享馆</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-contact">
+
+    <!-- 年龄验证弹窗（同首页） -->
+    <div class="age-gate" id="ageGate">
+        <div class="age-gate-card">
+            <div class="age-gate-divider"></div>
+            <h2 class="age-gate-title"><i class="fa-solid fa-lock age-gate-icon"></i> 年龄认证</h2>
+            <p class="age-gate-desc">本网站展示成人私密用品，仅限 <strong>18 周岁以上</strong> 人士浏览。</p>
+            <div class="age-gate-disclaimer">
+                <p><i class="fa-solid fa-circle-exclamation"></i> <strong>免责声明</strong></p>
+                <p>本站所有商品仅供个人私密使用，请合法、合规、理性对待。未满 18 岁者请立即离开。继续浏览即代表您已阅读并接受本声明。</p>
+            </div>
+            <div class="birth-form">
+                <p class="birth-label">请输入您的出生日期：</p>
+                <div class="birth-selects">
+                    <select id="birthYear" aria-label="年"></select>
+                    <span class="birth-sep">年</span>
+                    <select id="birthMonth" aria-label="月"></select>
+                    <span class="birth-sep">月</span>
+                    <select id="birthDay" aria-label="日"></select>
+                    <span class="birth-sep">日</span>
+                </div>
+                <button class="age-btn age-btn-verify" id="ageVerifyBtn">
+                    <i class="fa-solid fa-check"></i> 验证年龄
+                </button>
+                <p class="age-error" id="ageError"></p>
+            </div>
+            <div class="age-gate-divider"></div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gem"></i><span>臻选私享馆</span></a>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">精选好物</a>
+                <a href="contact.html" class="nav-link nav-link-contact active"><i class="fa-solid fa-comment-dots"></i> 联系顾问</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-card">
+            <div class="contact-card-divider"></div>
+            <h2 class="contact-title"><i class="fa-solid fa-user-tie contact-title-icon"></i> 专属私享顾问</h2>
+            <p class="contact-desc">扫码添加微信，获取更多密选好物与一对一服务。</p>
+            <p class="contact-privacy"><i class="fa-solid fa-shield-halved"></i> 隐私发货 · 保密包装 · 全程安心</p>
+            <div class="qr-wrapper">
+                <div class="qr-frame">
+                    <img src="images/wechat-qr.jpg" alt="微信二维码" class="qr-image"
+                         onerror="this.style.display='none';this.parentElement.classList.add('qr-placeholder');">
+                </div>
+                <p class="qr-hint">扫一扫添加好友</p>
+            </div>
+            <div class="wechat-id-row">
+                <span class="wechat-id-label">微信号：</span>
+                <span class="wechat-id-text" id="wechatIdText">YourWeChatID</span>
+                <button class="copy-btn" id="copyBtn" title="复制微信号">
+                    <i class="fa-solid fa-copy"></i><span class="copy-btn-text">复制</span>
+                </button>
+            </div>
+            <span class="copy-toast" id="copyToast">✓ 已复制</span>
+            <p class="contact-note"><i class="fa-solid fa-circle-info"></i> 添加时请备注<strong>「私享」</strong>以便通过。</p>
+            <div class="contact-card-divider"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-divider"></div>
+        <p class="footer-text">© 2026 臻选私享馆 · 隐私发货 · 保密包装</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
